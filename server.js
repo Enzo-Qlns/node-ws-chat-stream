@@ -38,19 +38,6 @@ const wss = new WebSocket.Server({ server });
 const clients = new Set();
 
 /**
- * Watches for changes in the index.html file and notifies clients to reload
- * @description When the HTML file is modified, all connected clients are notified to reload their page
- */
-fs.watch('index.html', (eventType, filename) => {
-    if (eventType === 'change') {
-        broadcast(JSON.stringify({
-            type: 'reload',
-            message: 'Page needs reload'
-        }));
-    }
-});
-
-/**
  * Handles new WebSocket connections
  * @param {WebSocket} ws - The WebSocket connection instance
  * @description Sets up event listeners for new connections, including:
