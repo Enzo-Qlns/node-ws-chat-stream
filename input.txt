@@ -1,0 +1,5 @@
+Ceci est un exemple de texte qui sera transformé en majuscules.
+Les Streams en Node.js permettent de traiter les données de manière efficace,
+surtout pour les fichiers volumineux.
+Le Transform Stream va convertir tout ce texte en majuscules
+pendant la copie du fichier. 

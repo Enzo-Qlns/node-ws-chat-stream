@@ -1,0 +1,6 @@
+# Pnpm
+.pnpm-store
+node_modules
+
+# Output
+output.txt
